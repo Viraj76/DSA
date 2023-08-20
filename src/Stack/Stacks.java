@@ -8,12 +8,14 @@ public class Stacks {
         stack.push(5);
         stack.push(35);
         stack.push(45);
-        stack.pop();
-        System.out.println(stack);
-        System.out.println(stack.peek());
-        stack.set(0,23);
-        System.out.println(stack);
-        System.out.println(stack.elementAt(4));
+//        stack.pop();
+//        System.out.println(stack);
+//        System.out.println(stack.peek());
+//        stack.set(0,23);
+//        System.out.println(stack);
+//        stack.firstElement();
+//        System.out.println(stack.firstElement());
+        System.out.println(stack.elementAt(1));
       //  stack.  SO MANY FUNCTIONS EXISTS
     }
 }
