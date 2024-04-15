@@ -26,11 +26,29 @@ public class BinaryTree {
         root.right=creatingBinaryTree();
         return root;
     }
-    static void inorder(Node root){    //LNR
+    static private int depthLeft = 0;
+    static private int depthRight = 0;
+
+    static private int left = 0;
+    static private int right = 0;
+
+
+    static void inorder(Node root){    //// LNR
         if(root==null)
             return;
+        depthLeft++;
+        left = root.value;
         inorder(root.left);
         System.out.print(root.value+" ");
+
+    }
+
+    static void  inorderRight(Node root){
+        if(root == null){
+            return;
+        }
+        depthRight++;
+        right = root.value;
         inorder(root.right);
     }
     static Node MergeTrees(Node firstTree, Node SecondTree) {

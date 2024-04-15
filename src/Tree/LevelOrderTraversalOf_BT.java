@@ -2,7 +2,7 @@
 //
 //import java.util.Scanner;
 //
-//public class Exercise_9_BST {
+//public class Tree.Exercise_9_BST {
 //    static class Node{
 //        int value;
 //        Node left=null;
@@ -76,7 +76,7 @@
 //    }
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
-//        Exercise_9_BST eBST=new Exercise_9_BST();
+//        Tree.Exercise_9_BST eBST=new Tree.Exercise_9_BST();
 //        System.out.println("\n **Enter -1 when you have entered your BST**\n");
 //        System.out.print("Enter the ROOT value of the BST  --> ");
 //        int rootValue=sc.nextInt();

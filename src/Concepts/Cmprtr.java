@@ -10,7 +10,8 @@ public class Cmprtr {
         names.add("Devajit");
         names.add("Yash");
         names.add("Abhijeet");
-        names.sort(cmp);
+//        names.sort(cmp);
+        names.sort(Comparator.comparingInt(String::length));
         System.out.println(names);
     }
 }

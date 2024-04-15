@@ -1,3 +1,0 @@
-class exercise_9 {
-
-}

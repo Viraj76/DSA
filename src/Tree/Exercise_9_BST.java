@@ -1,6 +1,5 @@
+package Tree;
 
-
-import Tree.BinarySearchTree;
 import java.util.*;
 public class Exercise_9_BST {
     static class Node{
