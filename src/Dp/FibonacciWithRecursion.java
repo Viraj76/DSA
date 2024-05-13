@@ -2,7 +2,12 @@ package Dp;
 
 import java.util.Arrays;
 
-public class FibonacciWithDP {
+
+/*
+Tc = N
+SC = N(due to recursion stack) + N (due to dp array)
+ */
+public class FibonacciWithRecursion {
 
     public static void main(String[] args) {
 /*

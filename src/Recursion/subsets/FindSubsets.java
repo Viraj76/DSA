@@ -21,7 +21,7 @@ public class FindSubsets {
             list.add(processed);
             return list;
         }
-        char c = unProcessed.charAt(0);
+         char c = unProcessed.charAt(0);
         findSubsets(processed + c , unProcessed.substring(1) , list);
         findSubsets(processed , unProcessed.substring(1) , list);
 
