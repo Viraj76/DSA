@@ -19,6 +19,7 @@ public class FIndAllIndex {
 
         if(i == arr.length) return list;
 
+
         if(arr[i] == target) list.add(i);
 
         ArrayList<Integer> allAnsBelowFunctions = findAllIndex(arr,target,i+1);

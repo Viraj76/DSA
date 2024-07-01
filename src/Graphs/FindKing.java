@@ -24,6 +24,8 @@ public class FindKing {
             adj.add(new ArrayList<>());
         }
 
+
+
         for (int i = 0; i < edg; i++) {
             int x = scanner.nextInt();
             int y = scanner.nextInt();
