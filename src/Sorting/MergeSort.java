@@ -61,9 +61,56 @@ class MergeSort {
 //        }
 //    }
     public static void main(String[] args) {
-        int[] numbers = { 3,2,6,3,7,5,6,9,0,11,10};
+        int[] numbers = { 0,45,-4,-1,3,2,6,3,7,5 };
+        int start = 0;
+        int end = numbers.length - 1;
 
 
+        mergeSorting(numbers, start, end);
+        System.out.println(Arrays.toString(numbers));
 
+
+    }
+
+    private static void mergeSorting(int[] numbers, int start, int end) {
+
+        if(start == end) return;
+        int mid = (start + end ) / 2;
+        mergeSorting(numbers,start,mid);
+        mergeSorting(numbers,mid+1,end);
+
+        merging(numbers,start,mid,end);
+
+
+    }
+
+    private static void merging(int[] numbers, int start, int mid, int end) {
+        int [] temp = new int[end - start + 1];
+        int i = 0;
+        int left = start;
+        int right = mid + 1;
+        while (left <= mid && right <= end){
+
+            if(numbers[left] <= numbers[right]){
+                temp[i++] = numbers[left];
+                left++;
+            }
+            else{
+                temp[i++] = numbers[right];
+                right++;
+            }
+        }
+        while(left <= mid){
+            temp[i++] = numbers[left];
+            left++;
+        }
+
+        while (right <= end){
+            temp[i++] = numbers[right];
+            right++;
+        }
+        for (int k = start; k<=end; k++){
+            numbers[k] = temp[k-start];
+        }
     }
 }
