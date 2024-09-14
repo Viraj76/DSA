@@ -1,8 +1,12 @@
 package Sorting;
 import java.util.Arrays;
+
+/*
+o(n^2) for worst average best cases
+ */
 public class SelectionSort {
     public static void main(String[] args) {
-        int []nums={4,1,9,2,3,6};
+        int []nums={1,4,9,2,3,6};
         selectionSort(nums);
         System.out.println(Arrays.toString(nums));
     }
